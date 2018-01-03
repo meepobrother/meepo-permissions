@@ -42,3 +42,18 @@ export class AppComponent {
 }
 
 ```
+
+```html
+<div *check="'admin';else elseBlock;">
+    我是管理员
+    <a (click)="quit()" class="weui-btn weui-btn_mini weui-btn_primary">退出登录</a>
+</div>
+<ng-template #elseBlock>
+    我是不是管理员
+    <a (click)="test()" class="weui-btn weui-btn_mini weui-btn_primary">管理员登录</a>
+</ng-template>
+
+<div *checks="let item of items">
+    {{item|json}}
+</div>
+```
