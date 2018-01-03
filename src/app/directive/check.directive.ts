@@ -59,9 +59,10 @@ export class CheckDirective implements OnInit, AfterViewInit {
 
     private handlePermission(template: TemplateRef<any>) {
         this.viewContainer.clear();
-        if (!template) return;
         console.log(this.checkOf);
         console.log(this._check);
+        console.log(template);
+        if (!template) return;
         this.viewContainer.createEmbeddedView(template, { $implicit: this.checkOf });
     }
 
