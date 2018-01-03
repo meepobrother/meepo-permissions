@@ -16,7 +16,7 @@ export class CheckDirective implements OnInit, AfterViewInit {
         return this._check;
     }
 
-    @Input() checkOf: any;
+    @Input() checkOf: any = {};
 
     @Input() checkElse: TemplateRef<any>;
 
