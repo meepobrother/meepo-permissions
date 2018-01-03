@@ -61,6 +61,7 @@ export class CheckDirective implements OnInit, AfterViewInit {
         this.viewContainer.clear();
         if (!template) return;
         console.log(this.checkOf);
+        console.log(this._check);
         this.viewContainer.createEmbeddedView(template, { $implicit: this.checkOf });
     }
 
