@@ -1,5 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CheckDirective } from './directive/check.directive';
+import { ChecksDirective } from './directive/checks.directive';
+
 import { RolesService, ROLE_DEFAULT, RoleInter } from './roles';
 import { EventModule } from 'meepo-event';
 import { MeepoCoreServiceModule } from 'meepo-core';
@@ -10,10 +12,12 @@ import { MeepoCoreServiceModule } from 'meepo-core';
         MeepoCoreServiceModule
     ],
     exports: [
-        CheckDirective
+        CheckDirective,
+        ChecksDirective
     ],
     declarations: [
-        CheckDirective
+        CheckDirective,
+        ChecksDirective
     ],
     providers: [
         RolesService

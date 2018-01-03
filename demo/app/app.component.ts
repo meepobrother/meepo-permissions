@@ -11,6 +11,11 @@ import { } from '../../src/app/app';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
+  items: any[] = [{
+    title: '1',
+    role: 'all'
+  }];
+
   constructor(
     public event: EventService
   ) { }

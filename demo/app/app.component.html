@@ -6,3 +6,7 @@
     我是不是管理员
     <a (click)="test()" class="weui-btn weui-btn_mini weui-btn_primary">管理员登录</a>
 </ng-template>
+
+<div *checks="let item of items">
+    {{item|json}}
+</div>

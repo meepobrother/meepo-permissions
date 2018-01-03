@@ -11,31 +11,29 @@ export class RolesService {
         this.role = role;
     }
 
-    check(keys: string | string[]): Promise<any> {
-        return new Promise((resolve, reject) => {
-            if (this.role.items) {
-                let has: boolean = false;
-                if (this.util.isArray(keys)) {
-                    keys.map(key => {
-                        if (key === 'all') {
-                            has = true;
-                        }
-                        if (this.role.items.indexOf(key) >= 0) {
-                            has = true;
-                        }
-                    });
-                } else {
-                    if (keys === 'all') {
+    check(keys: string | string[]): boolean {
+        if (this.role.items) {
+            let has: boolean = false;
+            if (this.util.isArray(keys)) {
+                keys.map(key => {
+                    if (key === 'all') {
                         has = true;
-                    } else {
-                        has = this.role.items.indexOf(keys) >= 0;
                     }
-                }
-                resolve(has);
+                    if (this.role.items.indexOf(key) >= 0) {
+                        has = true;
+                    }
+                });
             } else {
-                resolve(true);
+                if (keys === 'all') {
+                    has = true;
+                } else {
+                    has = this.role.items.indexOf(keys) >= 0;
+                }
             }
-        });
+            return has;
+        } else {
+            return true;
+        }
     }
 
     setRole(role: RoleInter) {
