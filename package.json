@@ -1,6 +1,6 @@
 {
     "name": "meepo-permissions",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "runner for angular",
     "main": "./bundles/meepo.umd.js",
     "module": "./esm5/meepo.js",
@@ -29,9 +29,9 @@
     "homepage": "https://github.com/meepobrother/meepo-permissions/README.md",
     "devDependencies": {
         "@angular/cli": "^1.6.1",
-        "@angular/compiler": "5.2.0-beta.1",
-        "@angular/compiler-cli": "5.2.0-beta.1",
-        "@angular/platform-browser-dynamic": "5.2.0-beta.1",
+        "@angular/compiler": ">=5.1.2",
+        "@angular/compiler-cli": ">=5.1.2",
+        "@angular/platform-browser-dynamic": ">=5.1.2",
         "@types/core-js": "^0.9.43",
         "@types/node": "^8.5.1",
         "less": "^2.7.3",
@@ -45,11 +45,11 @@
         "typescript": "~2.4.2"
     },
     "dependencies": {
-        "@angular/common": "5.2.0-beta.1",
-        "@angular/core": "5.2.0-beta.1",
-        "@angular/forms": "5.2.0-beta.1",
-        "@angular/platform-browser": "5.2.0-beta.1",
-        "@angular/router": "^5.1.2",
+        "@angular/common": ">=5.1.2",
+        "@angular/core": ">=5.1.2",
+        "@angular/forms": ">=5.1.2",
+        "@angular/platform-browser": ">=5.1.2",
+        "@angular/router": ">=5.1.2",
         "meepo-core": ">=3.2.5",
         "meepo-event": ">=1.1.0",
         "reflect-metadata": "^0.1.10",

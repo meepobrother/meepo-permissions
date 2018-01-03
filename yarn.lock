@@ -97,18 +97,24 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/compiler-cli@5.2.0-beta.1":
-  version "5.2.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-5.2.0-beta.1.tgz#171b0dbe8f62111e708f48ef84b9996501431935"
+"@angular/common@>=5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.1.2.tgz#b2659161575d463bb8b3e30e37434b26d70366b4"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/compiler-cli@>=5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-5.1.2.tgz#70addc11b6528f087abe809f94acedecdfc9c8f6"
   dependencies:
     chokidar "^1.4.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
     tsickle "^0.25.5"
 
-"@angular/compiler@5.2.0-beta.1":
-  version "5.2.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.2.0-beta.1.tgz#25f364f0f387d34628552860593170ec572d8885"
+"@angular/compiler@>=5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.1.2.tgz#4dfd0dd7fab39a14a1a104097c2f6af470ddabdb"
   dependencies:
     tslib "^1.7.1"
 
@@ -118,15 +124,27 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/core@>=5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.1.2.tgz#751070c0f4e5a8c4e2170204e08eca06391b84b1"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/forms@5.2.0-beta.1":
   version "5.2.0-beta.1"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.2.0-beta.1.tgz#f32dabf92a22b9cdc46e2a50bbbf48f154f0c558"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/platform-browser-dynamic@5.2.0-beta.1":
-  version "5.2.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.2.0-beta.1.tgz#c0228aeaac78901a2d5c1770a3737113f89fb53c"
+"@angular/forms@>=5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.1.2.tgz#fae4934ccdd41443efdee49b754c8b2a5587b12c"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/platform-browser-dynamic@>=5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.1.2.tgz#120d49ce16bcb91b8ac1c5e5c634fba592359ad7"
   dependencies:
     tslib "^1.7.1"
 
@@ -136,7 +154,13 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/router@^5.1.2":
+"@angular/platform-browser@>=5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.1.2.tgz#6faf926b9b41b6d54d873f3dcc4f31ad35fd0c38"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/router@>=5.1.2", "@angular/router@^5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-5.1.2.tgz#1da8845478ca340e9c4b3d9da1d1a8ee796fda18"
   dependencies:
