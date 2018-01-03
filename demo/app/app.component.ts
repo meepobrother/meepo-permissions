@@ -16,15 +16,11 @@ export class AppComponent {
   ) { }
   test() {
     this.event.publish('role.change', {
-      title: '管理员',
-      code: 'admin',
       items: ['admin']
     });
   }
   quit() {
     this.event.publish('role.change', {
-      title: '游客',
-      code: 'fans',
       items: ['fans']
     });
   }

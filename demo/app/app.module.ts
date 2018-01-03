@@ -11,8 +11,6 @@ import { PermissionsModule } from '../../src/app/app';
   imports: [
     BrowserModule,
     PermissionsModule.forRoot({
-      title: '游客',
-      code: 'free',
       items: [
         'free1'
       ]
