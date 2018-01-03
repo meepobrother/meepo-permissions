@@ -16,6 +16,8 @@ export class CheckDirective implements OnInit, AfterViewInit {
         return this._check;
     }
 
+    @Input() checkOf: any;
+
     @Input() checkElse: TemplateRef<any>;
 
     permissions: string[] = [];
@@ -62,7 +64,11 @@ export class CheckDirective implements OnInit, AfterViewInit {
 
     private showTemp(template: TemplateRef<any>) {
         if (!template) return;
-        this.viewContainer.createEmbeddedView(template);
+        this.viewContainer.createEmbeddedView(template, new CheckOfContent(this.checkOf));
     }
 
+}
+
+export class CheckOfContent<T>{
+    constructor(public $implicit: T) { }
 }
