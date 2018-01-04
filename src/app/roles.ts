@@ -24,7 +24,7 @@ export class RolesService {
                     }
                 });
             } else {
-                if (keys === 'all') {
+                if (!keys || keys === 'all') {
                     has = true;
                 } else {
                     has = this.role.items.indexOf(keys) >= 0;
