@@ -12,6 +12,7 @@ export class RolesService {
     }
 
     check(keys: string | string[]): boolean {
+        console.log(this.role);
         if (this.role.items) {
             let has: boolean = false;
             if (this.util.isArray(keys)) {
