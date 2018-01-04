@@ -1,6 +1,6 @@
 {
     "name": "meepo-permissions",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "runner for angular",
     "main": "./bundles/meepo.umd.js",
     "module": "./esm5/meepo.js",

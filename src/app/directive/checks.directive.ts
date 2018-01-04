@@ -74,19 +74,22 @@ export class ChecksDirective<T> implements DoCheck, OnChanges {
         changes.forEachOperation(
             (item: IterableChangeRecord<any>, adjustedPreviousIndex: number, currentIndex: number) => {
                 if (this._role.check(item.item.role)) {
-                    if (item.previousIndex == null) {
-                        const view = this._viewContainer.createEmbeddedView(
-                            this._template, new NgForOfContext<T>(null!, this.checksOf, -1, -1), currentIndex);
-                        const tuple = new RecordViewTuple<T>(item, view);
-                        insertTuples.push(tuple);
-                    } else if (currentIndex == null) {
-                        this._viewContainer.remove(adjustedPreviousIndex);
-                    } else {
-                        const view = this._viewContainer.get(adjustedPreviousIndex)!;
-                        this._viewContainer.move(view, currentIndex);
-                        const tuple = new RecordViewTuple(item, <EmbeddedViewRef<NgForOfContext<T>>>view);
-                        insertTuples.push(tuple);
-                    }
+                    item.item.permission = true;
+                } else {
+                    item.item.permission = false;
+                }
+                if (item.previousIndex == null) {
+                    const view = this._viewContainer.createEmbeddedView(
+                        this._template, new NgForOfContext<T>(null!, this.checksOf, -1, -1), currentIndex);
+                    const tuple = new RecordViewTuple<T>(item, view);
+                    insertTuples.push(tuple);
+                } else if (currentIndex == null) {
+                    this._viewContainer.remove(adjustedPreviousIndex);
+                } else {
+                    const view = this._viewContainer.get(adjustedPreviousIndex)!;
+                    this._viewContainer.move(view, currentIndex);
+                    const tuple = new RecordViewTuple(item, <EmbeddedViewRef<NgForOfContext<T>>>view);
+                    insertTuples.push(tuple);
                 }
             });
 
