@@ -1,6 +1,6 @@
 {
     "name": "meepo-permissions",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "runner for angular",
     "main": "./bundles/meepo.umd.js",
     "module": "./esm5/meepo.js",
@@ -51,9 +51,9 @@
         "@angular/platform-browser": ">=5.1.2",
         "@angular/router": ">=5.1.2",
         "meepo-core": ">=3.2.5",
-        "meepo-event": ">=1.1.0",
+        "meepo-event": ">=1.1.8",
         "reflect-metadata": "^0.1.10",
         "rxjs": "^5.5.5",
-        "zone.js": "0.8.4"
+        "zone.js": ">=0.8.4"
     }
 }
